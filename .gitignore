@@ -3,6 +3,7 @@
 # --- Folders ---
 # Ignore folder source
 /source/*
+/.idea/
 
 # Track folder source/bone despite previous rule
 /source/*
