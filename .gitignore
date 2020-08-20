@@ -1,0 +1,15 @@
+#Ignore list of project files
+#
+# --- Folders ---
+# Ignore folder source
+/source/*
+
+# Track folder source/bone despite previous rule
+/source/*
+!/source/bone/
+
+
+
+# --- Files ---
+# Ignore all README.txt
+README.txt
