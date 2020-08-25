@@ -119,7 +119,6 @@ body {
     font-weight: 400;
     margin: 2rem 0;
 }
-
 .grid__item {
     float: left;
     margin-right: 1.7%;
@@ -127,12 +126,6 @@ body {
     width: 49.15%;
     position: relative;
 }
-
-
-.grid__item:nth-of-type(2n) {
-    margin-right: 0;
-}
-
 .grid__overlay {
     position: absolute;
     top: 0;
@@ -156,11 +149,65 @@ body {
     text-align: center;
     font-size: 1.8125rem;
 }
-.grid__text {
+.grid__text,
+.item-circle__picture {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-*/
+.item_circle {
+    display: inline-block;
+    width: 6.25rem;
+    height: 6.25rem;
+    background: #ffb9b3;
+    text-align: center;
+    border-radius: 50%;
+    padding: 1.1rem;
+}
+.item-circle__picture {
+    max-width: 100%;
+}
+.advantage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.advantage__item {
+    width: 28%;
+    text-align: center;
+    margin-right: 8%;
+}
+.grid__item:nth-of-type(2n),
+.advantage__item:last-child {
+    margin-right: 0;
+}
+.advantage__headline {
+    font-size: 1.25rem;
+    margin: 0 0 0.8rem;
+}
+.advantage__icon {
+    margin-bottom: 1.2rem;
+}
+.page__row--footer {
+    background-color: #595959;
+    color: #fff;
+    margin-top: 4.375rem;
+}
+.footer__copyright {
+    text-align: right;
+}
+.footer__link {
+    color: inherit;
+    text-decoration: none;
+}
+.footer__link:hover {
+    text-decoration: underline;
+}
+.footer {
+    padding: 1.2rem 0;
+}
